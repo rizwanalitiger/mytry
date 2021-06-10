@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <style>
+ 
+	*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	}
+	.sidebar{
+	position:absolute;
+	left:0;
+	width:250px;
+text-decoration:none;
+	background:#042331;
+	}
+	.sidebar header{
+	font-size:22px;
+	color:white;
+	text-align:center;
+	line-height:70px;
+	background:#063146;
+	user-select:none;
+	}
+	.sidebar ul a{
+	display:block;
+	height:100%;
+	width:100%;
+	font-size:20px;
+	color:white;
+	line-height:65px;
+	padding-left:40px;
+	box-sizing:border-box;
+	border-top:1px solid rgba(255,255,255,.1);
+	border-bottom:1px solid black;
+	transition:.6s;
+	
+	}
+	ul li:hover a{
+	padding-left:50px;
+	}
+	</style>
+	
+	
+  </head>
+  <body>
+  
+	<div class="sidebar">
+	<header>Python</header>
+	<ul>
+	
+	<li><a href="introduction.html">Introduction</li></a>
+	<li><a href="syntax.html">Basic Syntax</li></a>
+	<li><a href="variable-types.html">Variable Types</li></a>
+	<li><a href="operators.html">Basic Operators</li></a>
+	<li><a href="decision.html">Decision Making</li></a>
+	<li><a href="loop.html">Loops</li></a>
+	
+	<li><a href="module.html">Module</li></a>
+		<li><a href="timeanddate.html">Date And Time</li></a>
+	<li><a href="function.html">Functions</li></a>
+	<li><a href="dictionary.html">Dictionary</li></a>
+	<li><a href="file.html">Files I/O</li></a>
+	<li><a href="exeption.html">Exceptions</li></a>
+	</ul>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <style>
+ body{
+background-color:white;
+}
+.h{
+position:absolute;
+left:350px;
+}
+</style>
+<body>
+<div class="h">
+<div class="row">
+<div class="col-10">
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+<h3 align="center">Exceptions</h3>
+</div>
+Python provides two very important features to handle any unexpected error in your Python programs and to add debugging capabilities in them −
+<ul type="square"><li>
+Exception Handling − This would be covered in this tutorial. Here is a list standard Exceptions available in Python: Standard Exceptions.</li>
+
+<li>Assertions − This would be covered in Assertions in Python tutorial.</li></ul>
+
+List of Standard Exceptions −
+<br><br>
+<table class="table table-hover">
+   <thead>
+      
+   
+      <tr>
+        <th>S.no</th>
+        <th>Exception Name&Description</th>
+       </tr>
+	  </thead>
+	  <tbody>
+     <td >1</td>
+<td><p><b>Exception</b></p>
+<p>Base class for all exceptions</p></td>
+</tr>
+<tr>
+<td>2</td>
+<td><p><b>StopIteration</b></p>
+<p>Raised when the next() method of an iterator does not point to any object.</p></td>
+</tr>
+<tr>
+<td>3</td>
+<td><p><b>SystemExit</b></p>
+<p>Raised by the sys.exit() function.</p></td>
+</tr>
+<tr>
+<td>4</td>
+<td><p><b>StandardError</b></p>
+<p>Base class for all built-in exceptions except StopIteration and SystemExit.</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td><p><b>ArithmeticError</b></p>
+<p>Base class for all errors that occur for numeric calculation.</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td><p><b>OverflowError</b></p>
+<p>Raised when a calculation exceeds maximum limit for a numeric type.</p></td>
+</tr>
+<tr>
+<td>7</td>
+<td><p><b>FloatingPointError</b></p>
+<p>Raised when a floating point calculation fails.</p></td>
+</tr>
+<tr>
+<td>8</td>
+<td><p><b>ZeroDivisionError</b></p>
+<p>Raised when division or modulo by zero takes place for all numeric types.</p></td>
+</tr>
+<tr>
+<td>9</td>
+<td><p><b>AssertionError</b></p>
+<p>Raised in case of failure of the Assert statement.</p></td>
+</tr>
+<tr>
+<td>10</td>
+<td><p><b>AttributeError</b></p>
+<p>Raised in case of failure of attribute reference or assignment.</p></td>
+</tr>
+<tr>
+<td>11</td>
+<td><p><b>EOFError</b></p>
+<p>Raised when there is no input from either the raw_input() or input() function and the end of file is reached.</p></td>
+</tr>
+<tr>
+<td>12</td>
+<td><p><b>ImportError</b></p>
+<p>Raised when an import statement fails.</p></td>
+</tr>
+<tr>
+<td>13</td>
+<td><p><b>KeyboardInterrupt</b></p>
+<p>Raised when the user interrupts program execution, usually by pressing Ctrl+c.</p></td>
+</tr>
+<tr>
+<td>14</td>
+<td><p><b>LookupError</b></p>
+<p>Base class for all lookup errors.</p></td>
+</tr>
+<tr>
+<td>15</td>
+<td><p><b>IndexError</b></p>
+<p>Raised when an index is not found in a sequence.</p></td>
+</tr>
+<tr>
+<td>16</td>
+<td><p><b>KeyError</b></p>
+<p>Raised when the specified key is not found in the dictionary.</p></td>
+</tr>
+<tr>
+<td>17</td>
+<td><p><b>NameError</b></p>
+<p>Raised when an identifier is not found in the local or global namespace.</p></td>
+</tr>
+<tr>
+<td>18</td>
+<td><p><b>UnboundLocalError</b></p>
+<p>Raised when trying to access a local variable in a function or method but no value has been assigned to it.</p></td>
+</tr>
+<tr>
+<td>19</td>
+<td><p><b>EnvironmentError</b></p>
+<p>Base class for all exceptions that occur outside the Python environment.</p></td>
+</tr>
+<tr>
+<td>20</td>
+<td><p><b>IOError</b></p>
+<p>Raised when an input/ output operation fails, such as the print statement or the open() function when trying to open a file that does not exist.</p></td>
+</tr>
+<tr>
+<td>21</td>
+<td><p><b>IOError</b></p>
+<p>Raised for operating system-related errors.</p></td>
+</tr>
+<tr>
+<td>22</td>
+<td><p><b>SyntaxError</b></p>
+<p>Raised when there is an error in Python syntax.</p></td>
+</tr>
+<tr>
+<td>23</td>
+<td><p><b>IndentationError</b></p>
+<p>Raised when indentation is not specified properly.</p></td>
+</tr>
+<tr>
+<td>24</td>
+<td><p><b>SystemError</b></p>
+<p>Raised when the interpreter finds an internal problem, but when this error is encountered the Python interpreter does not exit.</p></td>
+</tr>
+<tr>
+<td>25</td>
+<td><p><b>SystemExit</b></p>
+<p>Raised when Python interpreter is quit by using the sys.exit() function. If not handled in the code, causes the interpreter to exit.</p></td>
+</tr>
+<tr>
+<td>26</td>
+<td><p><b>TypeError</b></p>
+<p>Raised when an operation or function is attempted that is invalid for the specified data type.</p></td>
+</tr>
+<tr>
+<td>27</td>
+<td><p><b>ValueError</b></p>
+<p>Raised when the built-in function for a data type has the valid type of arguments, but the arguments have invalid values specified.</p></td>
+</tr>
+<tr>
+<td>28</td>
+<td><p><b>RuntimeError</b></p>
+<p>Raised when a generated error does not fall into any category.</p></td>
+</tr>
+<tr>
+<td>29</td>
+
+<td><p><b>NotImplementedError</b></p>
+<p>Raised when an abstract method that needs to be implemented in an inherited class is not actually implemented.</p></td>
+</tr>
+		
+		 
+		
+    </tbody>
+  </table> <br><br>
+
+
+<h3>Assertions in Python</h3>
+An assertion is a sanity-check that you can turn on or turn off when you are done with your testing of the program.
+
+The easiest way to think of an assertion is to liken it to a raise-if statement (or to be more accurate, a raise-if-not statement). An expression is tested, and if the result comes up false, an exception is raised.
+
+Assertions are carried out by the assert statement, the newest keyword to Python, introduced in version 1.5.
+
+Programmers often place assertions at the start of a function to check for valid input, and after a function call to check for valid output.
+
+The assert Statement
+When it encounters an assert statement, Python evaluates the accompanying expression, which is hopefully true. If the expression is false, Python raises an AssertionError exception.
+
+The syntax for assert is −
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+assert Expression[, Arguments]
+</div>
+</div>
+assert Expression[, Arguments]
+If the assertion fails, Python uses ArgumentExpression as the argument for the AssertionError. AssertionError exceptions can be caught and handled like any other exception using the try-except statement, but if not handled, they will terminate the program and produce a traceback.
+
+Example
+Here is a function that converts a temperature from degrees Kelvin to degrees Fahrenheit. Since zero degrees Kelvin is as cold as it gets, the function bails out if it sees a negative temperature −
+
+
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+Live Demo<br>
+#!/usr/bin/python<br>
+def KelvinToFahrenheit(Temperature):<br>
+   assert (Temperature >= 0),"Colder than absolute zero!"<br>
+   return ((Temperature-273)*1.8)+32<br>
+print KelvinToFahrenheit(273)<br>
+print int(KelvinToFahrenheit(505.78))<br>
+print KelvinToFahrenheit(-5)
+</div>
+</div>
+When the above code is executed, it produces the following result −
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+32.0<br>
+451<br>
+Traceback (most recent call last):<br>
+File "test.py", line 9, in <module><br>
+print KelvinToFahrenheit(-5)<br>
+File "test.py", line 4, in KelvinToFahrenheit<br>
+assert (Temperature >= 0),"Colder than absolute zero!"<br>
+AssertionError: Colder than absolute zero!
+</div>
+</div>
+<h3>What is Exception?</h3>
+An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the program's instructions. In general, when a Python script encounters a situation that it cannot cope with, it raises an exception. An exception is a Python object that represents an error.
+
+When a Python script raises an exception, it must either handle the exception immediately otherwise it terminates and quits.
+
+<h3>Handling an exception</h3>
+If you have some suspicious code that may raise an exception, you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
+
+Syntax
+Here is simple syntax of try....except...else blocks −
+
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   You do your operations here;<br>
+   ......................<br>
+except ExceptionI:<br>
+   If there is ExceptionI, then execute this block.<br>
+except ExceptionII:<br>
+   If there is ExceptionII, then execute this block.<br>
+   ......................<br>
+else:<br>
+   If there is no exception then execute this block.
+</div>
+</div>
+<p>Here are few important points about the above-mentioned syntax &minus;</p>
+<ul type="square">
+<li><p>A single try statement can have multiple except statements. This is useful when the try block contains statements that may throw different types of exceptions.</p></li>
+<li><p>You can also provide a generic except clause, which handles any exception.</p></li>
+<li><p>After the except clause(s), you can include an else-clause. The code in the else-block executes if the code in the try: block does not raise an exception.</p></li>
+<li><p>The else-block is a good place for code that does not need the try: block's protection.</p></li>
+</ul>
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   fh = open("testfile", "w")<br>
+   fh.write("This is my test file for exception handling!!")<br>
+except IOError:<br>
+   print "Error: can\'t find file or read data"<br>
+else:<br>
+   print "Written content in the file successfully"<br>
+   fh.close()
+</div>
+</div>
+This produces the following result −
+
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+Written content in the file successfully
+</div>
+</div>
+Example
+This example tries to open a file where you do not have write permission, so it raises an exception −
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   fh = open("testfile", "r")<br>
+   fh.write("This is my test file for exception handling!!")<br>
+except IOError:<br>
+   print "Error: can\'t find file or read data"<br>
+else:<br>
+   print "Written content in the file successfully"
+</div>
+</div>
+This produces the following result −
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+Error: can't find file or read data
+</div>
+</div>
+<h3>The except Clause with No Exceptions</h3>
+You can also use the except statement with no exceptions defined as follows −
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   You do your operations here;<br>
+   ......................<br>
+except:<br>
+   If there is any exception, then execute this block.<br>
+   ......................<br>
+else:<br>
+   If there is no exception then execute this block.
+</div>
+</div>
+This kind of a try-except statement catches all the exceptions that occur. Using this kind of try-except statement is not considered a good programming practice though, because it catches all exceptions but does not make the programmer identify the root cause of the problem that may occur.
+
+<h3>The except Clause with Multiple Exceptions</h3>
+You can also use the same except statement to handle multiple exceptions as follows −
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   You do your operations here;<br>
+   ......................<br>
+except(Exception1[, Exception2[,...ExceptionN]]]):<br>
+   If there is any exception from the given exception list, <br>
+   then execute this block.<br>
+   ......................<br>
+else:<br>
+   If there is no exception then execute this block.
+</div>
+</div>
+<h3>The try-finally Clause</h3>
+You can use a finally: block along with a try: block. The finally block is a place to put any code that must execute, whether the try-block raised an exception or not. The syntax of the try-finally statement is this −
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   You do your operations here;<br>
+   ......................<br>
+   Due to any exception, this may be skipped.<br>
+finally:<br>
+   This would always be executed.
+</div>
+</div>
+You cannot use else clause as well along with a finally clause.
+
+Example
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   fh = open("testfile", "w")<br>
+   fh.write("This is my test file for exception handling!!")<br>
+finally:<br>
+   print "Error: can\'t find file or read data"
+</div>
+</div>
+If you do not have permission to open the file in writing mode, then this will produce the following result −
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+Error: can't find file or read data
+</div>
+</div>
+Same example can be written more cleanly as follows −
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   fh = open("testfile", "w")<br>
+   try:<br>
+      fh.write("This is my test file for exception handling!!")<br>
+   finally:<br>
+      print "Going to close the file"<br>
+      fh.close()<br>
+except IOError:<br>
+   print "Error: can\'t find file or read data"
+</div>
+</div>
+When an exception is thrown in the try block, the execution immediately passes to the finally block. After all the statements in the finally block are executed, the exception is raised again and is handled in the except statements if present in the next higher layer of the try-except statement.
+<br><br>
+<h3>Argument of an Exception</h3>
+An exception can have an argument, which is a value that gives additional information about the problem. The contents of the argument vary by exception. You capture an exception's argument by supplying a variable in the except clause as follows −
+
+
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   You do your operations here;<br>
+   ......................<br>
+except ExceptionType, Argument:<br>
+   You can print value of Argument here...
+</div>
+</div>
+
+If you write the code to handle a single exception, you can have a variable follow the name of the exception in the except statement. If you are trapping multiple exceptions, you can have a variable follow the tuple of the exception.
+
+This variable receives the value of the exception mostly containing the cause of the exception. The variable can receive a single value or multiple values in the form of a tuple. This tuple usually contains the error string, the error number, and an error location.
+
+Example
+Following is an example for a single exception −
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+# Define a function here.# Define a function here.<br>
+def temp_convert(var):<br>
+   try:<br>
+      return int(var)<br>
+   except ValueError, Argument:<br>
+      print "The argument does not contain numbers\n", Argument
+
+
+</div>
+</div>
+This produces the following result −
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+The argument does not contain numbers<br>
+invalid literal for int() with base 10: 'xyz'
+</div>
+</div>
+
+
+
+<h3>Raising an Exceptions</h3>
+You can raise exceptions in several ways by using the raise statement. The general syntax for the raise statement is as follows.
+
+Syntax
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+raise [Exception [, args [, traceback]]]
+</div>
+</div>
+raise [Exception [, args [, traceback]]]
+Here, Exception is the type of exception (for example, NameError) and argument is a value for the exception argument. The argument is optional; if not supplied, the exception argument is None.
+
+The final argument, traceback, is also optional (and rarely used in practice), and if present, is the traceback object used for the exception.
+
+Example
+An exception can be a string, a class or an object. Most of the exceptions that the Python core raises are classes, with an argument that is an instance of the class. Defining new exceptions is quite easy and can be done as follows −
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+def functionName( level ):<br>
+   if level < 1:<br>
+      raise "Invalid level!", level<br>
+      # The code below to this would not be executed<br>
+      # if we raise the exception
+</div>
+</div>
+Note: In order to catch an exception, an "except" clause must refer to the same exception thrown either class object or simple string. For example, to capture above exception, we must write the except clause as follows −
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   Business Logic here...<br>
+except "Invalid level!":<br>
+   Exception handling here...<br>
+else:<br>
+   Rest of the code here...
+</div>
+</div>
+
+<h3>User-Defined Exceptions</h3>
+Python also allows you to create your own exceptions by deriving classes from the standard built-in exceptions.
+
+Here is an example related to RuntimeError. Here, a class is created that is subclassed from RuntimeError. This is useful when you need to display more specific information when an exception is caught.
+
+In the try block, the user-defined exception is raised and caught in the except block. The variable e is used to create an instance of the class Networkerror.
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+class Networkerror(RuntimeError):<br>
+   def __init__(self, arg):<br>
+      self.args = arg
+</div>
+</div>
+So once you defined above class, you can raise the exception as follows −
+
+<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 bg-dark text-white">
+try:<br>
+   raise Networkerror("Bad hostname")<br>
+except Networkerror,e:<br>
+   print e.args
+</div>
+<div>
+</div>
+</body>
+</html>
